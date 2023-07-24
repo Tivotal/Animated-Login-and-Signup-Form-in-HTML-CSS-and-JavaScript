@@ -1,0 +1,116 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right bottom, #ebf4f5, #b5c6e0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .form-box {
+  width: 50%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px 28px;
+  border-radius: 8px;
+  margin-inline: 20px;
+}
+
+.container .form-box header .title {
+  text-align: center;
+  color: #5851e3;
+}
+
+.container .form-box form {
+  margin-block: 30px;
+}
+
+.container .form-box form input {
+  width: 100%;
+  padding: 18px 16px;
+  outline: none;
+  border: none;
+  background: #a3a3a331;
+  margin: 12px 0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.container .form-box form input[type="text"] {
+  display: none;
+}
+
+.container.signup .form-box form input[type="text"] {
+  display: block;
+}
+
+.container .form-box form a {
+  text-decoration: none;
+  color: #767676;
+  font-size: 14px;
+}
+
+.container.signup .form-box form .pass-link {
+  display: none;
+}
+
+.container .form-box form input[type="submit"] {
+  margin-block: 24px;
+  background: #5851e3;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+.container .form-box form input[type="submit"]:hover {
+  background: #10449a;
+}
+
+.container .form-box form .links {
+  display: flex;
+  justify-content: center;
+}
+
+.container .form-box form .links a img {
+  max-height: 40px;
+  margin-inline: 10px;
+}
+
+.container .form-box form p {
+  text-align: center;
+  margin-block: 20px;
+  font-size: 16px;
+}
+
+.container .form-box form p a {
+  font-weight: 600;
+  color: #5851e3;
+  transition: 0.3s;
+}
+
+.container .form-box form p a:hover {
+  color: #10449a;
+  text-decoration: underline 2px;
+  text-underline-offset: 3.5px;
+}
+
+@media (max-width: 700px) {
+  .container .form-box {
+    width: 100%;
+  }
+}
